@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      var idx = 2;
+      var text = 'helloooo';
+      ReactDom.render(
+        <h1 id={idx + 1}>hello world{text}</h1>,
+        /*react.creatElement('h1',{},'hello'), */
+        document.getElementByid('app')
+      );
+    </script>
+  </body>
+</html>
