@@ -12,9 +12,14 @@ var TodoForm = React.createClass({
 
   render: function () {
     return (
-      <form className="todo-form" onSubmit={this.onSubmit}>
-        <input type="text" ref={this.inputRef}/>
-      </form>
+      <div>
+        <form className="todo-form" onSubmit={this.onSubmit}>
+          <input type="text" ref={this.inputRef}/>
+        </form>
+        <form className="todo-form" onSubmit={this.onSubmit}>
+          <input type="text" ref={this.inputRef}/>
+        </form>
+      </div>
     );
   },
 });
